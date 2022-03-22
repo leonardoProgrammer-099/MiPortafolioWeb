@@ -1,0 +1,99 @@
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 30%;
+    height: 10%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 10px;
+    left: 20%;
+    right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+    padding: 10px;
+    border-width: 2px 4px;
+    border-radius: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+nav .a{
+    transition: all 0.2s;
+    color: white;
+    padding: 15px;
+    border-radius: 200px;
+}
+
+nav a:hover{
+    background-color: #4EB4F7;
+}
+
+#home{
+    width: 100%;
+    height: 100%;
+}
+
+#sobremi{
+    width: 100%;
+    height: 100%;
+}
+
+#miexperiencia{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 912px) {
+    nav{
+        width: 50%;
+        left: 0;
+        right: 0;
+        bottom: 25px;
+    }
+    .a{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 540px){
+    nav{
+        width: 60%;
+        left: 0;
+        right: 0;
+        bottom: 25px;
+    }
+}
+@media screen and (max-width: 413px) {
+    
+  nav{
+      width: 90%;
+      left: 0;
+      right: 0;
+      padding: 25px;
+  }
+}
+
+@media screen and (max-width:414px){
+    nav{
+        width: 90%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 360px){
+    nav{
+        width: 80%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .a{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,156 @@
+.contenedor{
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    width: 100%;
+    text-align: center;
+}
+
+.text .l1{
+    font-size: 18px;
+}
+
+.text .l2{
+    font-size: 32px;
+}
+
+.boxes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+
+.box1 .img{
+    width: 40%;
+    transform: rotate(20deg); 
+    transform: rotate(20deg); 
+    position: relative;
+    transition: all 0.3s;
+}
+
+.box1 .img:hover{
+    transform: rotate(0deg); 
+    transform: rotate(0deg); 
+}
+
+.box1 .img:hover> .span{
+    transform: rotate(360deg); 
+    transform: rotate(360deg); 
+}
+
+.box1 .img img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px black;;
+}
+
+.span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+    z-index: -1;
+    transform: rotate(-20deg); 
+    transform: rotate(-20deg); 
+    border-radius: 20px;
+
+    transition: all 0.3s;
+}
+
+.box2{
+    width: 50%;
+    padding: 20px;
+}
+.sub-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sub-b{
+    width: 32%;
+    background-color: #2B2C66;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.sub-b:hover{
+    box-shadow: 4px 4px 10px black;
+    
+}
+.sub-b i{
+    font-size: 24px;
+}
+
+.parrafos{
+    width: 100%;
+    padding: 20px;
+}
+.parrafos p{
+    text-align: justify;
+}
+
+.parrafos a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.parrafos a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1024px){
+    .sub-b{
+        width: 36%;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 821px){
+    .boxes{
+        display: block;
+    }
+    .box1{
+        width: 100%;
+    }
+
+    .box2{
+        width: 100%;
+    }
+
+    .sub-b{
+        width: 40%;
+    }
+
+    .sub-b h3{
+        font-size: 20px;
+    }
+
+    .parrafos{
+        width: 100%;
+        padding: 5px;
+    }
+}

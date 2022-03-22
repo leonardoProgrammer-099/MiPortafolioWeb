@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+body , html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #201E39;
+    color: white;
+    font-family: 'IBM Plex Serif', serif;
+    
+}
+
+:root{
+    --primer-color: #2A2A67;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.bg-primario{
+    background-color: #201E39;
+}
+
+.bg-secundario{
+    background-color: #4EB4F7;
+}
+
+.bg-terciario{
+    background-color: #698DB5;
+}
+
+.text-color1{
+    color: #201E39;
+}
+
+.text-color2{
+    color: #4EB4F7;
+}
+
+.text-color3{
+    color: #698DB5;
+}

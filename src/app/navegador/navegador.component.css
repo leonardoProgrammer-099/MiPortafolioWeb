@@ -1,0 +1,292 @@
+.presentacion{
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+}
+
+.redesS{
+    width: 5%;
+    height: 100%;
+    position: relative;
+}
+.sub-redes{
+    position: absolute;
+    bottom: 10px;
+    font-size: 24px;
+}
+.perfil{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    padding-top: 70px;
+}
+
+.perfil .l2{
+    font-size: 34px;
+}
+
+.perfil .l3{
+    font-size: 14px;
+    color: #999;
+}
+
+.perfil .buttons{
+    width: 100%;
+}
+
+.perfil .buttons .button1, .button2{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px 15px; 
+}
+
+.button1{
+    
+    background-color: transparent;
+    border: 1px solid #4EB4F7;
+    color:#4EB4F7;
+    border-radius: 10px;
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+}
+.button2{
+    
+    color: white;
+    border-radius: 10px;
+}
+
+.button2:hover{
+    background-color: white;
+    color: black;
+}
+
+.img{
+    width: 30%;
+    height: 60%;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.171) 0%, rgba(78,180,247,1) 100%);
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+border-radius: 100px 100px 0px 0px;
+position: relative;
+overflow: hidden;
+}
+
+.img img{
+    width: 150%;
+    height: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+}
+
+.down{
+    width: 5%;
+    height: 100%;
+    
+    position: relative;
+}
+
+.down #mark{
+    transform: rotate(90deg); 
+    transform: rotate(90deg);  
+    width:100px;
+    position: absolute;
+    bottom: 10%;
+}
+
+.down #mark a{
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+   
+   
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .perfil .l1{
+        font-size: 30px;
+    }
+
+    .perfil .l2{
+        font-size: 44px;
+    }
+    
+    .perfil .l3{
+        font-size: 24px;
+        color: #999;
+    }
+
+    .img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:912px){
+    .img{
+        width: 70%;
+    }
+    .img img{
+        width: 170%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .img{
+        width: 70%;
+    }
+
+    .img img{
+        width: 170%;
+    }
+    .redesS, .down{
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 440px){
+    .perfil .l1{
+        font-size: 14px;
+    }
+
+    .perfil .l2{
+        font-size: 24px;
+    }
+    
+    .perfil .l3{
+        font-size: 14px;
+        color: #999;
+    }
+
+    
+.perfil .buttons .button1, .button2{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px 10px; 
+}
+    .img{
+        width: 100%;
+    }
+
+    .img img{
+        width: 170%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    .perfil{
+        width: 90%;
+    }
+
+    .perfil .buttons .button1, .button2{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 10px 15px; 
+    }
+
+    .perfil .l1{
+        font-size: 14px;
+    }
+
+    .perfil .l2{
+        font-size: 30px;
+    }
+    
+    .perfil .l3{
+        font-size: 14px;
+        color: #999;
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .img img{
+        width: 200%;
+    }
+
+  
+}
+
+@media screen and (max-width: 410px){
+    .perfil .l2{
+        font-size: 22px;
+    }
+    
+    .perfil .l3{
+        font-size: 12px;
+        color: #999;
+    } 
+
+    .perfil .buttons .button1, .button2{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 7px 7px; 
+    }
+}
+
+@media screen and (max-width: 394px) {
+
+    .perfil{
+        width: 100%;
+    }
+    .perfil .buttons .button1, .button2{
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 20px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 10px 15px; 
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .perfil{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 30px;
+        padding-top: 70px;
+    }
+    
+    .perfil .l2{
+        font-size: 34px;
+    }
+    
+    .perfil .l3{
+        font-size: 14px;
+        color: #999;
+    }   
+}
