@@ -38,7 +38,7 @@
     transform: rotate(20deg); 
     transform: rotate(20deg); 
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .box1 .img:hover{
@@ -69,7 +69,7 @@
     transform: rotate(-20deg); 
     border-radius: 20px;
 
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .box2{
@@ -130,6 +130,9 @@
 }
 
 @media screen and (max-width: 821px){
+    .contenedor{
+        height: auto;
+    }
     .boxes{
         display: block;
     }

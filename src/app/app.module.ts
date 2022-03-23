@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavegadorComponent } from './navegador/navegador.component';
 import { SobremiComponent } from './sobremi/sobremi.component';
 import { MiexperienceComponent } from './miexperience/miexperience.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavegadorComponent,
     SobremiComponent,
-    MiexperienceComponent
+    MiexperienceComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<div class="contenedor">
+    <div class="textos">
+        <label class="l1">Mis proyectos recientes</label> <br>
+        <label class="l2 text-color2">Portafolio</label>
+    </div>
+    <div class="cards">
+        <div class="targeta" *ngFor="let proyecto of proyects">
+            <div class="imagenes">
+                <img src="{{proyecto.img}}" alt="">
+            </div>
+             <div class="card-body">
+                 <label for=""><b>{{proyecto.text}}</b></label>
+             </div>   
+             <div class="targeta-footer">
+                 <a href="{{proyecto.urlGit}}" *ngIf="proyecto.btnGit" class="button1">GitHub</a>
+                 <a href="{{proyecto.urlDemo}}" *ngIf="proyecto.btnDemo" class="button2 bg-secundario">Live Demo</a>
+             </div>
+        </div>
+    </div>
+</div>

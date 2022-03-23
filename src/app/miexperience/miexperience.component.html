@@ -1,3 +1,28 @@
-<div>
-    
+<div class="contenedor">
+        <div class="textos">
+            <label class="l1">Que habilidades tengo</label> <br>
+            <label class="l2 text-color2">Mi experiencia</label>
+        </div>
+        <div class="skills">
+            <div class="frond">
+                <h4>Desarrollo front-end</h4>
+                <div class="contenedor-front">
+                        <div class="sub-cpntenedor" *ngFor="let f  of front"> 
+                            <i class="fa-solid fa-circle-check text-color2 p-1"></i> 
+                            <label for=""> {{f.nombre}}</label> <br>
+                            <label class="label2">{{f.porcentaje}}%</label>
+                        </div>
+                </div>
+            </div>
+            <div class="back">
+                <h4>Desarrollo back-end</h4>
+                <div class="contenedor-back">
+                    <div class="sub-cpntenedor" *ngFor="let f  of back"> 
+                        <i class="fa-solid fa-circle-check text-color2 p-1"></i> 
+                        <label for=""> {{f.nombre}}</label> <br>
+                        <label class="label2">{{f.porcentaje}}%</label>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>

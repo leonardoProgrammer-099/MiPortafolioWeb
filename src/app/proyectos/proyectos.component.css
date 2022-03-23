@@ -1,0 +1,155 @@
+.contenedor{
+    width: 100%;
+   
+}
+.textos{
+    width: 100%;
+    text-align: center;
+}
+
+.l1{
+    font-size: 12px;
+}
+.l2{
+    font-size: 30px;
+}
+
+.cards{
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.targeta{
+    width: 90%;
+    height: 350px;
+    background-color: #2A2A67;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.targeta:hover{
+    background-color: transparent;
+    border: 1px solid #4EB4F7;
+}
+.card-body{
+    width: 100%;
+    
+}
+.targeta .imagenes{
+    width: 90%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 20px;
+    
+}
+.imagenes img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px black;
+}
+
+.button1, .button2{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 10px 15px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button1{
+    
+    background-color: transparent;
+    border: 1px solid #4EB4F7;
+    color:#4EB4F7;
+    border-radius: 10px;
+}
+.button1:hover{
+    background-color: white;
+    color: black;
+}
+.button2{
+    
+    color: white;
+    border-radius: 10px;
+}
+
+.button2:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 913px){
+
+    .cards{
+        grid-template-columns: repeat(2, 50%);
+        gap: 6px;
+    }
+    .targeta{
+        width: 100%;
+        height: 350px;
+        background-color: #2A2A67;
+        border-radius: 20px;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+
+    .targeta .imagenes{
+        width: 100%;
+        height: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        border-radius: 20px;
+        
+    }
+    .imagenes img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px black;
+    }
+}
+
+@media screen and (max-width: 913px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6px;
+    }
+    .targeta{
+        width: 100%;
+        height:auto;
+        background-color: #2A2A67;
+        border-radius: 20px;
+        padding: 20px;
+        transition: all 0.3s;
+    }
+    .targeta .imagenes{
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        border-radius: 20px;
+        
+    }
+    .imagenes img{
+        width: 100%;
+
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px black;
+    }
+}
