@@ -16,7 +16,7 @@
 
 .cards{
     width: 80%;
-    height: 100px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     display: grid;

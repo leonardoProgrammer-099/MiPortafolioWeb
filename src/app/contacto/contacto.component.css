@@ -1,0 +1,94 @@
+.contenedor {
+  width: 100%;
+}
+
+.texto {
+  width: 100%;
+  text-align: center;
+}
+
+.l1 {
+  font-size: 12px;
+}
+
+.l2 {
+  font-size: 24px;
+}
+
+.contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.targetas {
+  width: 100%;
+  display: block;
+
+}
+
+.targeta{
+    width: 100%;
+    padding: 20px;
+    background-color: #27275F;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.targeta:hover{
+    background-color: transparent;
+    border: 1px solid #4EB4F7;
+}
+
+.targeta .la2{
+    color: #999;
+    font-size: 12px;
+}
+
+.la3{
+  text-decoration: none;
+}
+
+.formulario{
+    margin-top:  20px;
+    width: 50%;
+    color: #999;
+}
+.formulario input, .formulario textarea{
+    background-color: transparent;
+    border: 1px solid #999;
+    color: white;
+    transition: all 0.3s;
+}
+
+.formulario input:focus, .formulario textarea:focus{
+    border-color: #4EB4F7;
+}
+
+.button1, .button2{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px 15px; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button1{
+  
+  background-color: transparent;
+  border: 1px solid #4EB4F7;
+  color:#4EB4F7;
+  border-radius: 10px;
+}
+.button1:hover{
+  background-color: white;
+  color: black;
+}
