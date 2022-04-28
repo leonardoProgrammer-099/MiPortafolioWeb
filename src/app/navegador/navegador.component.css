@@ -90,6 +90,7 @@ overflow: hidden;
     position: absolute;
     bottom: 0;
     left: 0;  
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
 }
 
 .down{
@@ -153,12 +154,9 @@ overflow: hidden;
         width: 170%;
     }
     .redesS, .down{
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
+        width: 1%;
+        height: 100%;
+        
     }
 }
 @media screen and (max-width: 440px){
@@ -197,7 +195,9 @@ overflow: hidden;
 @media screen and (max-width: 414px) {
     
     .perfil{
-        width: 90%;
+        width: 74%;
+        padding: 0px;
+        margin-top: 30px;
     }
 
     .perfil .buttons .button1, .button2{
@@ -224,11 +224,11 @@ overflow: hidden;
     }
 
     .img{
-        width: 100%;
+        width: 70%;
     }
 
     .img img{
-        width: 200%;
+        width: 230%;
     }
 
   

@@ -23,13 +23,13 @@
 }
 
 .targetas {
-  width: 100%;
+  width: 30%;
   display: block;
 
 }
 
 .targeta{
-    width: 100%;
+    width: 70%;
     padding: 20px;
     background-color: #27275F;
     text-align: center;
@@ -37,6 +37,8 @@
     transition: all 0.3s;
     cursor: pointer;
     margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .targeta:hover{
@@ -91,4 +93,46 @@
 .button1:hover{
   background-color: white;
   color: black;
+}
+
+
+@media screen and (max-width:800px){
+  .contacto{
+    width: 100%;
+    display: block;
+  }
+  .targetas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .targeta{
+    width: 30%;
+  }
+  .formulario{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:562px){
+  .contacto{
+    display: block;
+  }
+  .targetas{
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .targeta{
+    width: 70%;
+  }
+  .formulario{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

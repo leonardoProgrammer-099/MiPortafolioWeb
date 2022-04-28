@@ -4,7 +4,7 @@
         <label class="text-color2 l2">Contactame</label>
     </div>
     <div class="contacto">
-            <div tclass="targetas">
+            <div class="targetas">
                     <div class="targeta">
                         <i class="fa-solid fa-envelope-circle-check"></i> <br>
                         <label class="la1">Email</label> <br>
@@ -25,21 +25,38 @@
                         <a class="la3 text-color2" href="https://api.whatsapp.com/send?phone=5548391648">Enviar un mensaje</a> <br>
                     </div>
             </div>
-            <form action="" class="formulario">
+            <div action="" class="formulario">
 
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" [(ngModel)]="nombre" name="nombre1" #nombre1="ngModel" required minlength="5" 
+                    [ngClass]="{ 'is-invalid': nombre1.errors && nombre1.touched , 'is-valid': !nombre1.errors && nombre1.touched }"
+                    >
                     <label for="floatingInput ">Nombre</label>
+                    <div [hidden]="!nombre1.errors" class="invalid-feedback">
+                       el nombre debe ser mayor a 4 caracteres
+                    </div>
                   </div>
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Correo Electronico">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Correo Electronico" [(ngModel)]="correo" name="correo1" #correo1="ngModel"
+                    [ngClass]="{ 'is-invalid': correo1.errors && correo1.touched , 'is-valid': !correo1.errors && correo1.touched }" required
+                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                    >
                     <label for="floatingInput ">Email</label>
+                    <div [hidden]="!correo1.errors" class="invalid-feedback">
+                        Correo invalido
+                    </div>
                   </div>
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Mensaje" id="floatingTextarea2" style="height: 100px" [(ngModel)]="mensaje" name="mensaje1" #mensaje1="ngModel"
+                    required minlength="15" 
+                    [ngClass]="{ 'is-invalid': mensaje1.errors && mensaje1.touched , 'is-valid': !mensaje1.errors && mensaje1.touched }"
+                    ></textarea>
                     <label for="floatingTextarea2">Mensaje</label>
+                    <div [hidden]="!mensaje1.errors" class="invalid-feedback">
+                        el Mensaje debe ser mayor a 14 caracteres
+                     </div>
                   </div>
-                  <button class="button1">Enviar</button>
-            </form>
+                  <button class="button1" (click)="EnviaMensaje()" [disabled]="nombre1.errors || correo1.errors || mensaje1.errors">Enviar</button>
+                </div>
     </div>
 </div>

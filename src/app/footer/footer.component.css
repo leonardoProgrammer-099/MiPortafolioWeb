@@ -1,0 +1,81 @@
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts{
+    width: 70%;
+}
+.nombre{
+    width: 100%;
+    text-align: center;
+}
+.lista{
+    width: 100%;
+}
+.lista ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lista ul li a{
+    padding: 10px 15px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+.redes{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a{
+    font-size: 24px;
+    padding: 8px 15px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+.redes a:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.label{
+    width: 100%;
+    text-align: center;
+}
+
+@media screen  and (max-width: 934px){
+   .texts{
+       width: 90%;
+   }
+}
+
+@media screen  and (max-width: 727px){
+    .texts{
+        width: 100%;
+    }
+ }
+
+ @media screen  and (max-width: 654px){
+    .lista ul{
+        text-align: center;
+        list-style: none;
+        display: block;
+    }
+    .lista ul li{
+        margin-top: 10px;
+    }
+ }
