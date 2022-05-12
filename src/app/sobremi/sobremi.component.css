@@ -84,9 +84,13 @@
 }
 
 .sub-b{
-    width: 32%;
+    width: 33%;
     background-color: #2B2C66;
     padding: 30px;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     border-radius: 20px;
     transition: all 0.3s;
@@ -155,5 +159,12 @@
     .parrafos{
         width: 100%;
         padding: 5px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .contenedor{
+        width: 100%;
+        text-align: center;
     }
 }

@@ -4,7 +4,7 @@
     height: 100%;
 }
 nav{
-    width: 30%;
+    width: 40%;
     height: 10%;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -19,15 +19,15 @@ nav{
     border-width: 2px 4px;
     border-radius: 40px;
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     gap: 20px;
 }
 nav .a{
     transition: all 0.2s;
     color: white;
-    padding: 15px;
-    border-radius: 200px;
+    padding: 10px 15px;
+    border-radius: 50%;
 }
 
 nav a:hover{
@@ -67,7 +67,7 @@ nav a:hover{
 }
 @media screen and (max-width: 912px) {
     nav{
-        width: 50%;
+        width: 60%;
         left: 0;
         right: 0;
         bottom: 25px;
@@ -76,25 +76,16 @@ nav a:hover{
         font-size: 24px;
     }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 680px){
     nav{
-        width: 60%;
+        width: 70%;
         left: 0;
         right: 0;
         bottom: 25px;
     }
 }
-@media screen and (max-width: 413px) {
-    
-  nav{
-      width: 90%;
-      left: 0;
-      right: 0;
-      padding: 25px;
-  }
-}
 
-@media screen and (max-width:414px){
+@media screen and (max-width:500px){
     nav{
         width: 90%;
         left: 0;
@@ -102,7 +93,16 @@ nav a:hover{
         padding: 20px;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 413px) {
+    
+    nav{
+        width: 90%;
+        left: 0;
+        right: 0;
+        padding: 25px;
+    }
+  }
+@media screen and (max-width: 380px){
     nav{
         width: 90%;
         left: 0;
